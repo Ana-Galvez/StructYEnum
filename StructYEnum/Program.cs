@@ -30,8 +30,12 @@ namespace StructYEnum
             Fecha fecha1 = new Fecha(18, 3, 2005);
             fecha1.MostrarFecha();
 
-            Triangulo triangulo1 = new Triangulo(56.2,32.1);
+            Triangulo triangulo1 = new Triangulo(56.2, 32.1);
             triangulo1.MostrarTriangulo();
+
+            Cuadrado cuadrado1 = new Cuadrado(56.2);
+            cuadrado1.AreaCuadrado();
+            cuadrado1.PerimetroCuadrado();
 
         }
     }
@@ -129,6 +133,28 @@ namespace StructYEnum
         {
             double calcular = alto * ancho;
             Console.WriteLine($"El área del triángulo es: {calcular}");
+        }
+    }
+
+    public struct Cuadrado
+    {
+        private double lado;
+
+        public Cuadrado(double lado)
+        {
+            this.lado = lado;
+        }
+
+        public void AreaCuadrado()
+        {
+            double calcularArea = lado * lado;
+            Console.WriteLine($"El área del cuadrado es: {calcularArea}");
+        }
+
+        public void PerimetroCuadrado()
+        {
+            double calcularPerimetro = lado + lado + lado + lado;
+            Console.WriteLine($"El perímetro del cuadrado es: {calcularPerimetro}");
         }
     }
 
