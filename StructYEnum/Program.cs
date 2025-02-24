@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace StructYEnum
 {
@@ -6,28 +7,31 @@ namespace StructYEnum
     {
         static void Main(string[] args)
         {
-            //Empleado ana = new Empleado("Ana", 20000);
-            //Console.WriteLine(ana);
-            //ana.MasSalario(500);
-            //Console.WriteLine(ana);
-            //Empleado juan = new Empleado("Juan", 30000);
-            //Console.WriteLine(juan);
-            //juan = ana;
-            //Console.WriteLine(juan);
-            //juan.MasSalario(1200);
-            //Console.WriteLine(juan);
-            //Console.WriteLine(ana);
-            //ana.MasSalario(100000);
-            //Console.WriteLine(ana);
+            Empleado ana = new Empleado("Ana", 20000);
+            Console.WriteLine(ana);
+            ana.MasSalario(500);
+            Console.WriteLine(ana);
+            Empleado juan = new Empleado("Juan", 30000);
+            Console.WriteLine(juan);
+            juan = ana;
+            Console.WriteLine(juan);
+            juan.MasSalario(1200);
+            Console.WriteLine(juan);
+            Console.WriteLine(ana);
+            ana.MasSalario(100000);
+            Console.WriteLine(ana);
 
-            //Coordenadas coordenada1 = new Coordenadas(32,14);
-            //coordenada1.MostrarCoordenadas();
+            Coordenadas coordenada1 = new Coordenadas(32, 14);
+            coordenada1.MostrarCoordenadas();
 
-            //ColorRGB colorRGB1 = new ColorRGB(250,125,72);
-            //colorRGB1.MostrarColorRGB();
+            ColorRGB colorRGB1 = new ColorRGB(250, 125, 72);
+            colorRGB1.MostrarColorRGB();
 
-            Fecha fecha1 = new Fecha(18,3,2005);
+            Fecha fecha1 = new Fecha(18, 3, 2005);
             fecha1.MostrarFecha();
+
+            Triangulo triangulo1 = new Triangulo(56.2,32.1);
+            triangulo1.MostrarTriangulo();
 
         }
     }
@@ -110,7 +114,23 @@ namespace StructYEnum
         }
     }
 
+    public struct Triangulo
+    {
+        private double alto;
+        private double ancho;
 
+        public Triangulo(double alto,double ancho)
+        {
+            this.alto = alto;
+            this.ancho = ancho;
+        }
+
+        public void MostrarTriangulo()
+        {
+            double calcular = alto * ancho;
+            Console.WriteLine($"El área del triángulo es: {calcular}");
+        }
+    }
 
 
 }
