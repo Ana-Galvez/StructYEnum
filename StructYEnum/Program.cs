@@ -23,8 +23,11 @@ namespace StructYEnum
             //Coordenadas coordenada1 = new Coordenadas(32,14);
             //coordenada1.MostrarCoordenadas();
 
-            ColorRGB colorRGB1 = new ColorRGB(250,125,72);
-            colorRGB1.MostrarColorRGB();
+            //ColorRGB colorRGB1 = new ColorRGB(250,125,72);
+            //colorRGB1.MostrarColorRGB();
+
+            Fecha fecha1 = new Fecha(18,3,2005);
+            fecha1.MostrarFecha();
 
         }
     }
@@ -87,6 +90,26 @@ namespace StructYEnum
             Console.WriteLine($"Color RGB formado por: ({rojo},{verde},{azul})");
         }
     }
+
+    public struct Fecha
+    {
+        private byte dia;
+        private byte mes;
+        private ushort anio;
+
+        public Fecha(byte dia,byte mes,ushort anio)
+        {
+            this.dia = dia;
+            this.mes = mes;
+            this.anio = anio;
+        }
+
+        public void MostrarFecha()
+        {
+            Console.WriteLine($"Fecha: {dia}/{mes}/{anio}");
+        }
+    }
+
 
 
 
