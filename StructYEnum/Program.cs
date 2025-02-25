@@ -43,6 +43,8 @@ namespace StructYEnum
             Bonus antonio = Bonus.Alto;
             double bonusAntonio = (double)antonio;
             Console.WriteLine(bonusAntonio);
+
+
         }
     }
 
