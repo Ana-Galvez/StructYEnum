@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 
 namespace StructYEnum
 {
@@ -7,36 +6,39 @@ namespace StructYEnum
     {
         static void Main(string[] args)
         {
-            Empleado ana = new Empleado("Ana", 20000);
-            Console.WriteLine(ana);
-            ana.MasSalario(500);
-            Console.WriteLine(ana);
-            Empleado juan = new Empleado("Juan", 30000);
-            Console.WriteLine(juan);
-            juan = ana;
-            Console.WriteLine(juan);
-            juan.MasSalario(1200);
-            Console.WriteLine(juan);
-            Console.WriteLine(ana);
-            ana.MasSalario(100000);
-            Console.WriteLine(ana);
+            //Empleado ana = new Empleado("Ana", 20000);
+            //Console.WriteLine(ana);
+            //ana.MasSalario(500);
+            //Console.WriteLine(ana);
+            //Empleado juan = new Empleado("Juan", 30000);
+            //Console.WriteLine(juan);
+            //juan = ana;
+            //Console.WriteLine(juan);
+            //juan.MasSalario(1200);
+            //Console.WriteLine(juan);
+            //Console.WriteLine(ana);
+            //ana.MasSalario(100000);
+            //Console.WriteLine(ana);
 
-            Coordenadas coordenada1 = new Coordenadas(32, 14);
-            coordenada1.MostrarCoordenadas();
+            //Coordenadas coordenada1 = new Coordenadas(32, 14);
+            //coordenada1.MostrarCoordenadas();
 
-            ColorRGB colorRGB1 = new ColorRGB(250, 125, 72);
-            colorRGB1.MostrarColorRGB();
+            //ColorRGB colorRGB1 = new ColorRGB(250, 125, 72);
+            //colorRGB1.MostrarColorRGB();
 
-            Fecha fecha1 = new Fecha(18, 3, 2005);
-            fecha1.MostrarFecha();
+            //Fecha fecha1 = new Fecha(18, 3, 2005);
+            //fecha1.MostrarFecha();
 
-            Triangulo triangulo1 = new Triangulo(56.2, 32.1);
-            triangulo1.MostrarTriangulo();
+            //Triangulo triangulo1 = new Triangulo(56.2, 32.1);
+            //triangulo1.MostrarTriangulo();
 
-            Cuadrado cuadrado1 = new Cuadrado(56.2);
-            cuadrado1.AreaCuadrado();
-            cuadrado1.PerimetroCuadrado();
+            //Cuadrado cuadrado1 = new Cuadrado(56.2);
+            //cuadrado1.AreaCuadrado();
+            //cuadrado1.PerimetroCuadrado();
 
+
+            Estaciones muchoCalor = Estaciones.Verano;
+            Console.WriteLine(muchoCalor);
         }
     }
 
