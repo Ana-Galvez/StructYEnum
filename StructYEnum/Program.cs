@@ -39,6 +39,10 @@ namespace StructYEnum
 
             Estaciones muchoCalor = Estaciones.Verano;
             Console.WriteLine(muchoCalor);
+
+            Bonus antonio = Bonus.Alto;
+            double bonusAntonio = (double)antonio;
+            Console.WriteLine(bonusAntonio);
         }
     }
 
