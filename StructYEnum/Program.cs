@@ -37,12 +37,17 @@ namespace StructYEnum
             //cuadrado1.PerimetroCuadrado();
 
 
-            Estaciones muchoCalor = Estaciones.Verano;
-            Console.WriteLine(muchoCalor);
+            //Estaciones muchoCalor = Estaciones.Verano;
+            //Console.WriteLine(muchoCalor);
 
-            Bonus antonio = Bonus.Alto;
-            double bonusAntonio = (double)antonio;
-            Console.WriteLine(bonusAntonio);
+            //Bonus antonio = Bonus.Alto;
+            //double bonusAntonio = (double)antonio;
+            //Console.WriteLine(bonusAntonio);
+
+            Empleado1 ana = new Empleado1("Ana", 5000, Bonus.Muy_Alto);
+            double salarioTotal = ana.GetSalarioTotal();
+            Console.WriteLine($"El empleado cobra actualmente: {salarioTotal}");
+            Console.WriteLine(salarioTotal + 1000);
 
 
         }

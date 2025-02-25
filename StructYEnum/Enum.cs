@@ -17,10 +17,15 @@ namespace StructYEnum
             this.nombre = nombre;
         }
 
-        public void GetEmpleado()
+        //public void GetEmpleado()
+        //{
+        //    double totalACobrar = salario + bonus;
+        //    Console.WriteLine($"El empleado {nombre} cobra actualmente {totalACobrar}");
+        //}
+
+        public double GetSalarioTotal()
         {
-            double totalACobrar = salario + bonus;
-            Console.WriteLine($"El empleado {nombre} cobra actualmente {totalACobrar}");
+            return salario + bonus;
         }
     }
 
